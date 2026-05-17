@@ -16,7 +16,10 @@
       "WebFetch(domain:osdk.org)",
       "Bash(python3 -c \"import sys,json,base64; d=json.load\\(sys.stdin\\); print\\(base64.b64decode\\(d['content']\\).decode\\('utf-8','replace'\\)\\)\")",
       "Bash(rtk ls *)",
-      "WebFetch(domain:library.defence-force.org)"
+      "WebFetch(domain:library.defence-force.org)",
+      "Bash(rtk grep *)",
+      "WebFetch(domain:www.aliexpress.com)",
+      "Bash(python3 -c \"import sys,re; t=sys.stdin.read\\(\\); print\\(re.sub\\('<[^>]+>',' ',t\\)\\)\")"
     ]
   }
 }

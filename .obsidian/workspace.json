@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "build-journey/00-build-vs-buy-research.md",
+                "file": "build-journey/01-decision-bom-order.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "00-build-vs-buy-research"
+              "title": "01-decision-bom-order"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "build-journey/00-build-vs-buy-research.md",
+                "file": "build-journey/01-decision-bom-order.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 00-build-vs-buy-research"
+              "title": "Backlinks for 01-decision-bom-order"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "build-journey/00-build-vs-buy-research.md",
+                "file": "build-journey/01-decision-bom-order.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 00-build-vs-buy-research"
+              "title": "Outgoing links from 01-decision-bom-order"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "build-journey/00-build-vs-buy-research.md",
+                "file": "build-journey/01-decision-bom-order.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 00-build-vs-buy-research"
+              "title": "Outline of 01-decision-bom-order"
             }
           }
         ]
@@ -185,9 +185,26 @@
   },
   "active": "6bd1fc82e918811a",
   "lastOpenFiles": [
+    "build-journey/00-build-vs-buy-research.md",
+    "build-journey/tools/T48_PROGRAMMER.md",
+    "build-journey/tools/SG_003A.md",
+    "build-journey/tools/MULTIMETER_EX350.md",
+    "build-journey/tools/DSO_TC3.md",
+    "build-journey/tools/LOGIC_PROBE_LP1.md",
+    "build-journey/tools/RASPBERRY_PI_DEBUG_PROBE.md",
+    "build-journey/tools/LCR_ST1.md",
+    "build-journey/tools/DIGITAL_MICROSCOPE.md",
+    "build-journey/tools/USB_POWER_METER.md",
+    "build-journey/tools/digital-logic-simulators.md",
+    "build-journey/tools/LOGIC_PROBE_610B.md",
+    "build-journey/tools/MULTIMETER_DMT99.md",
+    "build-journey/tools/DSLOGIC_PLUS.md",
+    "build-journey/tools/CHIP_TESTER.md",
+    "build-journey/tools/DPS_150.md",
+    "build-journey/tools",
+    "build-journey/01-decision-bom-order.md",
     "build-journey/README.md",
     "wiki/overview.md",
-    "build-journey/00-build-vs-buy-research.md",
     "build-journey",
     "wiki/sources/sodiumlb-loci-firmware.md",
     "wiki/sources/raxiss.com.md",
@@ -196,23 +213,7 @@
     "wiki/sources/JennyDigital-OriClone-1.md",
     "raw/github/JennyDigital-OriClone-1.md",
     "wiki/sources/48katmos.freeuk.com.md",
-    "wiki/sources/wiki.defence-force.org.md",
-    "raw/web/48katmos.freeuk.com.md",
-    "raw/web/wiki.defence-force.org.md",
-    "wiki/sources/blog.defence-force.org.md",
-    "raw/web/blog.defence-force.org.md",
     "wiki/sources/defence-force.org.md.tmp.24327.fbeb7f18a24e",
-    "wiki/sources/library.defence-force.org.md",
-    "raw/web/library.defence-force.org.md",
-    "wiki/sources/osdk.org.md",
-    "raw/web/osdk.org.md",
-    "wiki/sources/defence-force.org.md",
-    "raw/github/Oric-Software-Development-Kit-osdk.md",
-    "wiki/sources/forum.defence-force.org.md",
-    "raw/web/forum.defence-force.org.md",
-    "wiki/index.md",
-    "wiki/sources/oric.free.fr.md",
-    "wiki/log.md.tmp.7536.d44a8faadc2e",
-    "raw/web/defence-force.org.md"
+    "wiki/log.md.tmp.7536.d44a8faadc2e"
   ]
 }
