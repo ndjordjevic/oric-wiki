@@ -10,6 +10,12 @@ Append-only record of all ingests, refreshes, and significant changes. Newest en
 
 ---
 
+## 2026-05-17 | ingest | defence-force.org | Oric/Atari dev site — home of the OSDK cross-development toolchain
+
+- Created: wiki/sources/defence-force.org.md
+- Updated: wiki/index.md, wiki/overview.md, wiki/log.md, raw/web/README.md, raw/github/README.md, inbox.md
+- Companion: raw/github/Oric-Software-Development-Kit-Oric-Software.md
+
 ## 2026-05-17 | ingest | oric.free.fr | comprehensive Oric reference site (history, hardware, software)
 
 - Created: wiki/sources/oric.free.fr.md

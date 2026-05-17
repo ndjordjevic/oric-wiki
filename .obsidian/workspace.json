@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "wiki/sources/oric.free.fr.md",
+                "file": "wiki/sources/defence-force.org.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "oric.free.fr"
+              "title": "defence-force.org"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "wiki/sources/oric.free.fr.md",
+                "file": "wiki/sources/defence-force.org.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for oric.free.fr"
+              "title": "Backlinks for defence-force.org"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "wiki/sources/oric.free.fr.md",
+                "file": "wiki/sources/defence-force.org.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from oric.free.fr"
+              "title": "Outgoing links from defence-force.org"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "wiki/sources/oric.free.fr.md",
+                "file": "wiki/sources/defence-force.org.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of oric.free.fr"
+              "title": "Outline of defence-force.org"
             }
           }
         ]
@@ -186,13 +186,17 @@
   "active": "6bd1fc82e918811a",
   "lastOpenFiles": [
     "wiki/overview.md",
+    "wiki/sources/defence-force.org.md",
+    "wiki/index.md",
     "wiki/sources/oric.free.fr.md",
+    "wiki/log.md.tmp.7536.d44a8faadc2e",
+    "raw/web/defence-force.org.md",
+    "raw/github/Oric-Software-Development-Kit-Oric-Software.md",
     "raw/web/oric.free.fr.md",
     "AGENTS.md",
     "CLAUDE.md",
     "inbox.md",
     "wiki/sources/OldWer-Metaphoric.md",
-    "wiki/index.md",
     "wiki/log.md"
   ]
 }
