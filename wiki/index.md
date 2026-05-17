@@ -16,5 +16,6 @@ created: 2026-05-17
 | [[Board-Folk-Oric-Remix]] | github | standard | 2026-05-17 | |
 | [[oric.free.fr]] | web | standard | 2026-05-17 | |
 | [[defence-force.org]] | web | standard | 2026-05-17 | |
+| [[forum.defence-force.org]] | web | standard | 2026-05-17 | |
 
-_4 sources ingested._
+_5 sources ingested._

@@ -8,7 +8,10 @@
       "Bash(rtk curl *)",
       "Read(//tmp/**)",
       "Bash(python3 -c ' *)",
-      "Bash(rtk wc *)"
+      "Bash(rtk wc *)",
+      "Bash(python3 -c \"import re;h=open\\('df-login.html',encoding='utf-8',errors='replace'\\).read\\(\\);print\\(re.search\\(r'name=\\\\\"creation_time\\\\\"\\\\s+value=\\\\\"\\([^\\\\\"]*\\)\\\\\"',h\\).group\\(1\\)\\)\")",
+      "Bash(python3 -c \"import re;h=open\\('df-login.html',encoding='utf-8',errors='replace'\\).read\\(\\);print\\(re.search\\(r'name=\\\\\"form_token\\\\\"\\\\s+value=\\\\\"\\([^\\\\\"]*\\)\\\\\"',h\\).group\\(1\\)\\)\")",
+      "Bash(python3 -c \"import re;h=open\\('df-login.html',encoding='utf-8',errors='replace'\\).read\\(\\);print\\(re.search\\(r'name=\\\\\"sid\\\\\"\\\\s+value=\\\\\"\\([^\\\\\"]*\\)\\\\\"',h\\).group\\(1\\)\\)\")"
     ]
   }
 }
