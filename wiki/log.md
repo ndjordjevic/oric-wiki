@@ -8,6 +8,11 @@ created: 2026-05-17
 
 Append-only record of all ingests, refreshes, and significant changes. Newest entries at top.
 
+## 2026-05-17 | ingest | 48katmos.freeuk.com | Muso's Oric fan site — hardware specs, ROMs, circuit diagrams, software lists, Rhetoric magazine
+
+- Created: wiki/sources/48katmos.freeuk.com.md
+- Updated: wiki/index.md, wiki/overview.md, wiki/log.md, raw/web/README.md, inbox.md
+
 ## 2026-05-17 | ingest | wiki.defence-force.org | Defence Force DokuWiki — Oric hub (hardware, tools, emulators, projects)
 
 - Created: wiki/sources/wiki.defence-force.org.md
