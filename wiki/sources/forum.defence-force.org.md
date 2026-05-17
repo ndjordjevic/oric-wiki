@@ -50,6 +50,31 @@ The forum is publicly browsable, but the phpBB **search system requires a logged
 
 Use the forum when the other wiki sources do not answer a specific, practical question — a hardware fault, an OSDK build error, a particular 6502 or BASIC technique, or the status of a modern extension. It complements the reference material: where [[oric.free.fr]] documents how the machine works and [[defence-force.org]] documents the toolchain, the forum captures the troubleshooting and project chatter that only exists as community discussion.
 
+## Key threads — the Oric-clone build (curated 2026-05-17)
+
+A targeted, logged-in read of the threads most relevant to building a Metaphoric clone. (Note: the thread IDs originally recorded in `build-journey/00-build-vs-buy-research.md` §13 were inaccurate; the corrected `t=` values are below.)
+
+### Metaphoric — a new Oric clone — `t=2675` (Dec 2024)
+
+OldWer's original announcement of Metaphoric. Establishes the design intent: an Oric clone with the memory subsystem based on OriClone-1, plus conveniences — cheaper AY-3-8910, composite video, speaker amplifier, common-type relay. The mainboard fits an original Oric enclosure with the original keyboard, but the new Cherry-MX keyboard PCB does not. OldWer frames it as "as period-correct as possible" — only the video encoder is a part unavailable in the 1980s; everything else is through-hole, "primarily meant as a fun soldering project". Discussion with Dbug covers the joystick interface: Metaphoric uses a 7-diode IJK "Stingy" interface plus a cursor+spacebar port, with a **switch to disable IJK** because the IJK strobe shares the D5 line and can interfere with the printer port. The full 14-transistor IJK interface can still be wired to the printer port if a two-player IJK game is wanted.
+
+### Metaphoric V2 — `t=2733` (Apr 2025)
+
+OldWer's announcement that the **Metaphoric V2 design files are on GitHub** (`github.com/OldWer/Metaphoric`) — the version in this wiki as [[OldWer-Metaphoric]]. Recaps the V2 feature set: composite video (RCA), TRRS audio/video socket, dual AY-3-8912/AY-3-8910 footprints, selectable 7905/7805/external-5V power, two DB9 joystick ports on the keyboard PCB, front-panel RESET and NMI, Oric-1/Atmos ROM switch, IJK-disable switch, automatic hardware V-sync hack. Community reaction is enthusiastic (Sodiumlightbaby, Chema, Bieno, ibisum) with repeated interest in organising a larger production run or crowdfunding a "new-era Oric". Kenneth asks about ROMDIS pin compatibility when a UVPROM is used; OldWer confirms the ROM gets disabled correctly (e.g. when using LOCI).
+
+### Loci — First user impressions — `t=2672` (Dec 2024)
+
+A LOCI user-experience thread. Most relevant finding for a clone build: a user reports trying **LOCI both with an original Atmos and with a Metaphoric clone — and confirms it works on the clone, with identical behaviour on both machines**. This validates the LOCI + Metaphoric pairing recommended in the build journey. The thread also covers practical LOCI usage: USB sub-directories do work (exFAT, upper/lowercase fine); the Boot/Return UI — `[Return]` resumes the suspended session, `[Esc]` cold-boots — was a common point of confusion; firmware state-handling around `.dsk`/cold-boot was being improved (FW 0.2.2 era).
+
+### OCULA — a ULA replacement concept — `t=2709`
+
+The canonical OCULA development thread (18 pages, active into 2026). Read in detail for `build-journey/01-decision-bom-order.md` §3: OCULA only became reliable on *genuine* Oric boards around late-2025/early-2026 firmware, and the single attempt on record to run it on an Oric *clone* (an unknown homebrew board) never booted past a garbage screen. No one has tried OCULA in a Metaphoric.
+
+### Other-forum Metaphoric threads (non-Defence-Force)
+
+- **`oric.forumactif.org/t945-metaphoric`** — the French "Forum Oric" Metaphoric thread. Thread content is **login-walled to guests**, so it could not be captured here; listed for completeness.
+- **`ceo.oric.org/community/oric-atmos/metaphoric/`** — the Club Europe Oric (CEO) page "Metaphoric – Atmos", posted by Kenneth, 25 April 2025. Summarises OldWer's GitHub project: dual DB9 joystick ports (one cursor+space, one IJK with disable switch), dual AY-3-8910/PSG footprint, selectable power polarity via jumpers, front-panel reset, internal speaker removed and RF upgraded to PAL composite, dual-ROM design with ROMDIS. A reply (ftmb) notes the board appears compatible with original housings and the keyboard connector seems positioned identically to original boards.
+
 ## Ecosystem
 
 The forum is one property of the Defence Force constellation alongside the main site, the OSDK documentation site and the blog — all covered by [[defence-force.org]]. Its subject matter overlaps the reference material in [[oric.free.fr]] (emulators, magazines, hardware) and the modern hardware projects in this wiki: forum threads actively discuss extensions and ULA replacements of the kind reproduced by boards like Metaphoric. It is the social and support layer of the Oric preservation community.

@@ -26,5 +26,9 @@ created: 2026-05-17
 | [[raxiss.com]] | web | standard | 2026-05-17 | |
 | [[sodiumlb-loci-firmware]] | github | standard | 2026-05-17 | |
 | [[sodiumlb-loci-hardware]] | github | standard | 2026-05-17 | |
+| [[oric.signal11.org.uk]] | web | standard | 2026-05-17 | Mike Brown's Oric support site — diagnostic ROM, ULA reverse-engineering |
+| [[sodiumlb-ocula-hardware]] | github | standard | 2026-05-17 | OCULA open-hardware ULA replacement — PCB design files |
+| [[sodiumlb-ocula-pivic-firmware]] | github | standard | 2026-05-17 | OCULA/PIVIC firmware (shared OCULA + VIC-20 codebase) |
+| [[sodiumlb-ocula-docs]] | github | standard | 2026-05-17 | OCULA user documentation — install, mux-bridges, modes |
 
-_14 sources ingested._
+_18 sources ingested._

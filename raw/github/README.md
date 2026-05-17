@@ -13,3 +13,6 @@ Immutable GitHub repo captures. Written by the fetch step; never edited manually
 | raw/github/JennyDigital-OriClone-1.md | JennyDigital/OriClone-1 | 7 | master | (none) | 2026-05-17 | |
 | raw/github/sodiumlb-loci-firmware.md | sodiumlb/loci-firmware | 11 | main | v0.3.1 | 2026-05-17 | |
 | raw/github/sodiumlb-loci-hardware.md | sodiumlb/loci-hardware | 13 | main | (none) | 2026-05-17 | |
+| raw/github/sodiumlb-ocula-hardware.md | sodiumlb/ocula-hardware | 0 | main | (none) | 2026-05-17 | |
+| raw/github/sodiumlb-ocula-pivic-firmware.md | sodiumlb/ocula-pivic-firmware | 10 | main | v0.1.4 | 2026-05-17 | |
+| raw/github/sodiumlb-ocula-docs.md | sodiumlb/ocula-docs | 2 | main | (none) | 2026-05-17 | |

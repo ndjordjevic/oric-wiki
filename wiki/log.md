@@ -8,6 +8,35 @@ created: 2026-05-17
 
 Append-only record of all ingests, refreshes, and significant changes. Newest entries at top.
 
+## 2026-05-17 | ingest | sodiumlb-ocula-docs | OCULA user documentation — install, mux-bridges, RAM modes, configuration
+
+- Created: wiki/sources/sodiumlb-ocula-docs.md
+- Updated: wiki/index.md, wiki/overview.md, wiki/log.md, raw/github/README.md, inbox.md
+
+## 2026-05-17 | ingest | sodiumlb-ocula-pivic-firmware | OCULA/PIVIC firmware — RP6502-based ULA/VIC replacement firmware
+
+- Created: wiki/sources/sodiumlb-ocula-pivic-firmware.md
+- Updated: wiki/index.md, wiki/overview.md, wiki/log.md, raw/github/README.md, inbox.md
+
+## 2026-05-17 | ingest | sodiumlb-ocula-hardware | OCULA open-hardware ULA replacement — PCB design files (BSD-3)
+
+- Created: wiki/sources/sodiumlb-ocula-hardware.md
+- Updated: wiki/index.md, wiki/overview.md, wiki/log.md, raw/github/README.md, inbox.md
+
+## 2026-05-17 | fold | forum.defence-force.org t=2709 | OCULA canonical thread — already summarised in the forum page's "Key threads" section
+
+- No file change (the OCULA `t=2709` thread was already covered in wiki/sources/forum.defence-force.org.md); inbox line moved to Completed.
+
+## 2026-05-17 | update | forum.defence-force.org | added "Key threads — the Oric-clone build" section (Metaphoric/LOCI/OCULA threads)
+
+- Updated: wiki/sources/forum.defence-force.org.md, inbox.md
+- Folded 5 forum-thread URLs (3 Defence Force + oric.forumactif + ceo.oric.org) into the existing forum source page instead of ingesting each as a separate source (pin-llm-wiki derives one slug per domain, which would collide). Corrected thread IDs that were wrong in build-journey/00.
+
+## 2026-05-17 | ingest | oric.signal11.org.uk | Mike Brown's Oric support site — diagnostic ROM, ULA reverse-engineering, repair guide
+
+- Created: wiki/sources/oric.signal11.org.uk.md
+- Updated: wiki/index.md, wiki/overview.md, wiki/log.md, raw/web/README.md, inbox.md
+
 ## 2026-05-17 | ingest | sodiumlb-loci-hardware | LOCI hardware design files — PCB production files, BOM, FreeCAD case, and end-user manual wiki
 
 - Created: wiki/sources/sodiumlb-loci-hardware.md

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "build-journey/01-decision-bom-order.md",
+                "file": "wiki/log.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01-decision-bom-order"
+              "title": "log"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "build-journey/01-decision-bom-order.md",
+                "file": "wiki/log.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 01-decision-bom-order"
+              "title": "Backlinks for log"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "build-journey/01-decision-bom-order.md",
+                "file": "wiki/log.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 01-decision-bom-order"
+              "title": "Outgoing links from log"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "build-journey/01-decision-bom-order.md",
+                "file": "wiki/log.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 01-decision-bom-order"
+              "title": "Outline of log"
             }
           }
         ]
@@ -185,6 +185,19 @@
   },
   "active": "6bd1fc82e918811a",
   "lastOpenFiles": [
+    "inbox.md.tmp.61409.7b70f9d55b0f",
+    "wiki/sources/sodiumlb-ocula-docs.md",
+    "wiki/sources/sodiumlb-ocula-pivic-firmware.md",
+    "wiki/sources/sodiumlb-ocula-hardware.md",
+    "raw/github/sodiumlb-ocula-docs.md",
+    "inbox.md",
+    "raw/github/sodiumlb-ocula-pivic-firmware.md",
+    "raw/github/sodiumlb-ocula-hardware.md",
+    "build-journey/01-decision-bom-order.md",
+    "wiki/log.md.tmp.61409.89ad9c43671b",
+    "wiki/index.md.tmp.61409.7672ecdb6656",
+    "wiki/sources/oric.signal11.org.uk.md",
+    "raw/web/oric.signal11.org.uk.md",
     "wiki/sources/sodiumlb-loci-hardware.md",
     "raw/github/sodiumlb-loci-hardware.md",
     "build-journey/00-build-vs-buy-research.md",
@@ -200,19 +213,8 @@
     "build-journey/tools/digital-logic-simulators.md",
     "build-journey/tools/LOGIC_PROBE_610B.md",
     "build-journey/tools/MULTIMETER_DMT99.md",
-    "build-journey/tools/DSLOGIC_PLUS.md",
-    "build-journey/tools/CHIP_TESTER.md",
-    "build-journey/tools/DPS_150.md",
     "build-journey/tools",
-    "build-journey/01-decision-bom-order.md",
-    "build-journey/README.md",
-    "wiki/overview.md",
     "build-journey",
-    "wiki/sources/sodiumlb-loci-firmware.md",
-    "wiki/sources/raxiss.com.md",
-    "raw/web/raxiss.com.md",
-    "raw/github/sodiumlb-loci-firmware.md",
-    "wiki/sources/JennyDigital-OriClone-1.md",
     "wiki/sources/defence-force.org.md.tmp.24327.fbeb7f18a24e",
     "wiki/log.md.tmp.7536.d44a8faadc2e"
   ]

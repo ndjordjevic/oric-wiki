@@ -22,22 +22,6 @@ Drop URLs below under `## Pending`. Run `/pin-llm-wiki run <url>` to ingest a si
      Items are grouped: ingest the first two groups; the `skip`-tagged group is kept for the
      record but excluded from the next run. Flip a `skip` tag to re-include an item. -->
 
-### Core build — ingest (Metaphoric + original ULA + LOCI)
-
-- [ ] https://oric.signal11.org.uk/html/diagrom.htm <!-- note: Mike Brown's diagnostic ROM; essential first-power-on tool (build doc §9) -->
-- [ ] https://forum.defence-force.org/viewtopic.php?f=11&t=2268 <!-- note: forum: Metaphoric original announcement (Dec 2024) -->
-- [ ] https://forum.defence-force.org/viewtopic.php?f=11&t=2398 <!-- note: forum: Metaphoric V2 (Apr 2025) — the exact version being built -->
-- [ ] https://forum.defence-force.org/viewtopic.php?f=11&t=2522 <!-- note: forum: Loci + Metaphoric (Apr 2026) — confirms the chosen pairing works -->
-- [ ] https://oric.forumactif.org/t945-metaphoric <!-- note: French CEO/Oric forum's Metaphoric thread; Kenneth is OP -->
-- [ ] https://ceo.oric.org/community/oric-atmos/metaphoric/ <!-- note: CEO Oric forum Metaphoric thread -->
-
-### OCULA — ingest (the optional open-hardware experiment, build doc §3)
-
-- [ ] https://github.com/sodiumlb/ocula-hardware <!-- note: OCULA KiCAD hardware design files (BSD-3) — the open ULA-replacement board; key to the "understand every piece" goal -->
-- [ ] https://github.com/sodiumlb/ocula-pivic-firmware <!-- note: OCULA/PIVIC firmware (BSD-3) -->
-- [ ] https://github.com/sodiumlb/ocula-docs <!-- note: OCULA user documentation — install + firmware-update guide -->
-- [ ] https://forum.defence-force.org/viewtopic.php?f=11&t=2709 <!-- note: forum: OCULA canonical thread. CORRECTED — 00 paper listed this as t=2351, but t=2351 is an unrelated "Music" thread; the real OCULA thread is t=2709 (18 pages, active May 2026) -->
-
 ### Skip — not relevant to the chosen build (kept for the record; remove the `skip` tag to re-include)
 
 - [ ] https://myretrostore.co.uk/product/oric-1-atmos-clone-issue-5-pcb/ <!-- skip --> <!-- note: Kenneth's Issue 5 PCB — rejected: not open source and PCB not orderable -->
@@ -66,3 +50,13 @@ Drop URLs below under `## Pending`. Run `/pin-llm-wiki run <url>` to ingest a si
 - [x] https://github.com/sodiumlb/loci-firmware <!-- ingested 2026-05-17 -->
 - [x] https://www.raxiss.com/article/id/38-LOCI <!-- ingested 2026-05-17 -->
 - [x] https://github.com/sodiumlb/loci-hardware <!-- note: LOCI hardware design files + project wiki; LOCI is the chosen storage peripheral --> <!-- ingested 2026-05-17 -->
+- [x] https://oric.signal11.org.uk/html/diagrom.htm <!-- ingested 2026-05-17 — slug oric.signal11.org.uk -->
+- [x] https://forum.defence-force.org/viewtopic.php?f=11&t=2675 <!-- folded 2026-05-17 — "Metaphoric - a new Oric clone"; corrected from wrong t=2268; summarised into wiki/sources/forum.defence-force.org.md -->
+- [x] https://forum.defence-force.org/viewtopic.php?f=11&t=2733 <!-- folded 2026-05-17 — "Metaphoric V2"; corrected from wrong t=2398; summarised into wiki/sources/forum.defence-force.org.md -->
+- [x] https://forum.defence-force.org/viewtopic.php?f=11&t=2672 <!-- folded 2026-05-17 — "Loci - First user impressions"; corrected from wrong t=2522; summarised into wiki/sources/forum.defence-force.org.md -->
+- [x] https://oric.forumactif.org/t945-metaphoric <!-- folded 2026-05-17 — thread login-walled to guests; noted in wiki/sources/forum.defence-force.org.md -->
+- [x] https://ceo.oric.org/community/oric-atmos/metaphoric/ <!-- folded 2026-05-17 — summarised into wiki/sources/forum.defence-force.org.md -->
+- [x] https://github.com/sodiumlb/ocula-hardware <!-- ingested 2026-05-17 -->
+- [x] https://github.com/sodiumlb/ocula-pivic-firmware <!-- ingested 2026-05-17 -->
+- [x] https://github.com/sodiumlb/ocula-docs <!-- ingested 2026-05-17 -->
+- [x] https://forum.defence-force.org/viewtopic.php?f=11&t=2709 <!-- folded 2026-05-17 — OCULA thread; already summarised in wiki/sources/forum.defence-force.org.md -->
