@@ -8,6 +8,11 @@ created: 2026-05-17
 
 Append-only record of all ingests, refreshes, and significant changes. Newest entries at top.
 
+## 2026-05-17 | ingest | sodiumlb-loci-hardware | LOCI hardware design files — PCB production files, BOM, FreeCAD case, and end-user manual wiki
+
+- Created: wiki/sources/sodiumlb-loci-hardware.md
+- Updated: wiki/index.md, wiki/overview.md, wiki/log.md, raw/github/README.md, inbox.md
+
 ## 2026-05-17 | ingest | sodiumlb-loci-firmware | LOCI firmware source — RP2040/MIA storage emulator for Oric-1/Atmos
 
 - Created: wiki/sources/sodiumlb-loci-firmware.md

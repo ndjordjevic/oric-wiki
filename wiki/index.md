@@ -25,5 +25,6 @@ created: 2026-05-17
 | [[JennyDigital-OriClone-1]] | github | standard | 2026-05-17 | |
 | [[raxiss.com]] | web | standard | 2026-05-17 | |
 | [[sodiumlb-loci-firmware]] | github | standard | 2026-05-17 | |
+| [[sodiumlb-loci-hardware]] | github | standard | 2026-05-17 | |
 
-_13 sources ingested._
+_14 sources ingested._

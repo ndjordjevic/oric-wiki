@@ -24,7 +24,6 @@ Drop URLs below under `## Pending`. Run `/pin-llm-wiki run <url>` to ingest a si
 
 ### Core build — ingest (Metaphoric + original ULA + LOCI)
 
-- [ ] https://github.com/sodiumlb/loci-hardware <!-- note: LOCI hardware design files + project wiki; LOCI is the chosen storage peripheral -->
 - [ ] https://oric.signal11.org.uk/html/diagrom.htm <!-- note: Mike Brown's diagnostic ROM; essential first-power-on tool (build doc §9) -->
 - [ ] https://forum.defence-force.org/viewtopic.php?f=11&t=2268 <!-- note: forum: Metaphoric original announcement (Dec 2024) -->
 - [ ] https://forum.defence-force.org/viewtopic.php?f=11&t=2398 <!-- note: forum: Metaphoric V2 (Apr 2025) — the exact version being built -->
@@ -66,3 +65,4 @@ Drop URLs below under `## Pending`. Run `/pin-llm-wiki run <url>` to ingest a si
 - [x] http://www.48katmos.freeuk.com/ <!-- ingested 2026-05-17 -->
 - [x] https://github.com/sodiumlb/loci-firmware <!-- ingested 2026-05-17 -->
 - [x] https://www.raxiss.com/article/id/38-LOCI <!-- ingested 2026-05-17 -->
+- [x] https://github.com/sodiumlb/loci-hardware <!-- note: LOCI hardware design files + project wiki; LOCI is the chosen storage peripheral --> <!-- ingested 2026-05-17 -->

@@ -2,7 +2,7 @@
 type: source
 source_url: https://github.com/sodiumlb/loci-firmware
 tags: [loci, oric-hardware, firmware, raspberry-pi-pico, rp2040, floppy-emulation, rom-emulation, mia, c]
-related: [raxiss.com]
+related: [raxiss.com, sodiumlb-loci-hardware]
 product: loci-firmware
 detail_level: standard
 created: 2026-05-17

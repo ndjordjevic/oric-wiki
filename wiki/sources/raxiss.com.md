@@ -2,7 +2,7 @@
 type: source
 source_url: https://www.raxiss.com/article/id/38-LOCI
 tags: [loci, oric-hardware, expansion-port, floppy-emulation, rom-emulation, usb, raspberry-pi-pico, storage-emulation]
-related: [sodiumlb-loci-firmware]
+related: [sodiumlb-loci-firmware, sodiumlb-loci-hardware]
 product: loci
 detail_level: standard
 created: 2026-05-17
