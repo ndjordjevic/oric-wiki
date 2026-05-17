@@ -17,6 +17,21 @@ Drop URLs below under `## Pending`. Run `/pin-llm-wiki run <url>` to ingest a si
        note: <text>        — freeform note for human review (ignored by ingest)
 -->
 
+- [ ] https://github.com/sodiumlb/ocula-pivic-firmware <!-- note: modern Pico-based ULA replacement firmware; companion to LOCI; central to build plan Phase 3 -->
+- [ ] https://github.com/sodiumlb/loci-hardware <!-- note: LOCI hardware design files + project wiki; pairs with already-ingested loci-firmware -->
+- [ ] https://myretrostore.co.uk/product/oric-1-atmos-clone-issue-5-pcb/ <!-- note: Kenneth's traced-replica PCB (Option D in build-journey paper); currently OOS -->
+- [ ] https://oric.forumactif.org/t945-metaphoric <!-- note: French CEO/Oric forum's Metaphoric thread; Kenneth is OP -->
+- [ ] https://ceo.oric.org/community/oric-atmos/metaphoric/ <!-- note: CEO Oric forum Metaphoric thread -->
+- [ ] https://www.986-studio.com/category/retro-computing/oric/replicoric/ <!-- note: historical Replic'Oric project (2014); context only -->
+- [ ] https://oldcrap.org/2019/12/14/oric-nova-64/ <!-- note: Old Crap teardown of an actual Oric Nova 64 (the user's childhood machine) -->
+- [ ] https://oric.signal11.org.uk/html/diagrom.htm <!-- note: Mike Brown's Oric diagnostic ROM; essential first-power-on tool -->
+- [ ] https://en.wikipedia.org/wiki/Pravetz_(computer) <!-- note: Pravetz 8D Bulgarian Oric clone; alternate ULA donor source -->
+- [ ] https://forum.defence-force.org/viewtopic.php?f=11&t=2268 <!-- note: forum: Metaphoric original announcement (Dec 2024, 17 replies, 19k views) -->
+- [ ] https://forum.defence-force.org/viewtopic.php?f=11&t=2398 <!-- note: forum: Metaphoric V2 (Apr 2025) — what's in the repo -->
+- [ ] https://forum.defence-force.org/viewtopic.php?f=11&t=2522 <!-- note: forum: Loci + Metaphoric (Apr 2026) — confirms the recommended pairing works -->
+- [ ] https://forum.defence-force.org/viewtopic.php?f=11&t=2351 <!-- note: forum: OCULA canonical thread (267 replies, 90k views, still active May 2026) -->
+- [ ] https://forum.defence-force.org/viewtopic.php?f=11&t=2447 <!-- note: forum: the one and only Oric Remix thread (Aug 2025, 4 replies) -->
+
 ## Completed
 
 <!-- Processed lines are moved here automatically.

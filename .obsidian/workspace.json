@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "wiki/overview.md",
-                "mode": "source",
+                "file": "build-journey/00-build-vs-buy-research.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "overview"
+              "title": "00-build-vs-buy-research"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "wiki/overview.md",
+                "file": "build-journey/00-build-vs-buy-research.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for overview"
+              "title": "Backlinks for 00-build-vs-buy-research"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "wiki/overview.md",
+                "file": "build-journey/00-build-vs-buy-research.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from overview"
+              "title": "Outgoing links from 00-build-vs-buy-research"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "wiki/overview.md",
+                "file": "build-journey/00-build-vs-buy-research.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of overview"
+              "title": "Outline of 00-build-vs-buy-research"
             }
           }
         ]
@@ -185,6 +185,10 @@
   },
   "active": "6bd1fc82e918811a",
   "lastOpenFiles": [
+    "build-journey/README.md",
+    "wiki/overview.md",
+    "build-journey/00-build-vs-buy-research.md",
+    "build-journey",
     "wiki/sources/sodiumlb-loci-firmware.md",
     "wiki/sources/raxiss.com.md",
     "raw/web/raxiss.com.md",
@@ -194,7 +198,6 @@
     "wiki/sources/48katmos.freeuk.com.md",
     "wiki/sources/wiki.defence-force.org.md",
     "raw/web/48katmos.freeuk.com.md",
-    "wiki/overview.md",
     "raw/web/wiki.defence-force.org.md",
     "wiki/sources/blog.defence-force.org.md",
     "raw/web/blog.defence-force.org.md",
@@ -210,8 +213,6 @@
     "wiki/index.md",
     "wiki/sources/oric.free.fr.md",
     "wiki/log.md.tmp.7536.d44a8faadc2e",
-    "raw/web/defence-force.org.md",
-    "raw/github/Oric-Software-Development-Kit-Oric-Software.md",
-    "raw/web/oric.free.fr.md"
+    "raw/web/defence-force.org.md"
   ]
 }
