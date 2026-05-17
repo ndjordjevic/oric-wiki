@@ -2,7 +2,7 @@
 type: source
 source_url: https://github.com/Board-Folk/Oric-Remix
 tags: [oric-replica, kicad-pcb, motherboard, romdis-fix, ad724-composite, commodore-1531, ps2-usb-keyboard, rom-bank-selector]
-related: [OldWer-Metaphoric]
+related: [OldWer-Metaphoric, oric.free.fr]
 product: oric-remix
 detail_level: standard
 created: 2026-05-17

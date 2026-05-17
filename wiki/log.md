@@ -10,6 +10,11 @@ Append-only record of all ingests, refreshes, and significant changes. Newest en
 
 ---
 
+## 2026-05-17 | ingest | oric.free.fr | comprehensive Oric reference site (history, hardware, software)
+
+- Created: wiki/sources/oric.free.fr.md
+- Updated: wiki/index.md, wiki/overview.md, wiki/log.md, raw/web/README.md, inbox.md
+
 ## 2026-05-17 | ingest | Board-Folk-Oric-Remix | updated Oric-1/Atmos motherboard replica (KiCAD)
 
 - Created: wiki/sources/Board-Folk-Oric-Remix.md

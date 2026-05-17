@@ -4,7 +4,11 @@
       "Bash(git init *)",
       "Bash(gh repo *)",
       "Bash(rtk gh *)",
-      "Bash(gh api *)"
+      "Bash(gh api *)",
+      "Bash(rtk curl *)",
+      "Read(//tmp/**)",
+      "Bash(python3 -c ' *)",
+      "Bash(rtk wc *)"
     ]
   }
 }

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "wiki/sources/OldWer-Metaphoric.md",
+                "file": "wiki/sources/oric.free.fr.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "OldWer-Metaphoric"
+              "title": "oric.free.fr"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "wiki/sources/OldWer-Metaphoric.md",
+                "file": "wiki/sources/oric.free.fr.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for OldWer-Metaphoric"
+              "title": "Backlinks for oric.free.fr"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "wiki/sources/OldWer-Metaphoric.md",
+                "file": "wiki/sources/oric.free.fr.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from OldWer-Metaphoric"
+              "title": "Outgoing links from oric.free.fr"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "wiki/sources/OldWer-Metaphoric.md",
+                "file": "wiki/sources/oric.free.fr.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of OldWer-Metaphoric"
+              "title": "Outline of oric.free.fr"
             }
           }
         ]
@@ -185,9 +185,14 @@
   },
   "active": "6bd1fc82e918811a",
   "lastOpenFiles": [
-    "wiki/index.md",
     "wiki/overview.md",
-    "wiki/log.md",
-    "inbox.md"
+    "wiki/sources/oric.free.fr.md",
+    "raw/web/oric.free.fr.md",
+    "AGENTS.md",
+    "CLAUDE.md",
+    "inbox.md",
+    "wiki/sources/OldWer-Metaphoric.md",
+    "wiki/index.md",
+    "wiki/log.md"
   ]
 }

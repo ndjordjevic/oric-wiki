@@ -14,5 +14,6 @@ created: 2026-05-17
 |---|---|---|---|---|
 | [[OldWer-Metaphoric]] | github | standard | 2026-05-17 | |
 | [[Board-Folk-Oric-Remix]] | github | standard | 2026-05-17 | |
+| [[oric.free.fr]] | web | standard | 2026-05-17 | |
 
-_2 sources ingested._
+_3 sources ingested._
