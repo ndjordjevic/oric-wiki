@@ -49,6 +49,8 @@ This is no longer a close call. Against your brief:
 
 **Decision: build the Metaphoric V2** (`MetaphoricV2/` main PCB + `MetaphoricKBV2/` keyboard PCB).
 
+> **Kit option worth checking first.** In forum thread `t=2733` OldWer offered Metaphoric V2 **kits at €120** — PCBs, all components, keys, keycaps, and a 3D-printed case (€10 off if you supply your own keys/keycaps, another €10 off for your own resistors/caps). Only two kits were offered back in April 2025, so they may be long gone — but it is worth **emailing OldWer to ask** before self-sourcing. A kit is still a build-it-yourself assembly job (it satisfies constraint #1), and it eliminates the single biggest first-build risk: sourcing genuine, non-counterfeit ICs (see §6 / §8 #4). If a kit is available, take it.
+
 One caveat carried forward from `00`: Metaphoric's last commit is April 2025 (~13 months stale) vs Oric Remix's May 2026. For a *first build* that stability is a plus, and the forum shows people actively building Metaphoric in 2026 (incl. with LOCI). Not a concern.
 
 ---
@@ -70,15 +72,18 @@ Every Oric clone needs the video/timing/decoding chip. You have two ways to sati
 Your assumption was that OCULA and the original ULA both just sit in the same socket and swap freely. They do **not**:
 
 - The **HCS10017** is a true drop-in: it sits in the DIP-40 `IC1` socket and that is the entire installation.
-- **OCULA** has a DIP-40 footprint so it physically *fits* `IC1` — but the firmware currently only supports **"OCULA-is-the-RAM" mode**, which *also* requires installing **2 separate "mux-bridge" boards** that clip onto the host machine's DRAM multiplexer ICs. So OCULA is "ULA socket + extra hardware mod", not a swap.
+- **OCULA** has a DIP-40 footprint so it physically *fits* `IC1` — but it may need **2 separate "mux-bridge" interposer boards** clipped onto the host's two `74LS257` address multiplexers (`IC8`, `IC20`) to expose the low address bits. So OCULA is "ULA socket + possible hardware mod", not a guaranteed swap.
+
+  > **Sources conflict on whether the mux bridges are mandatory.** The `ocula-docs` wiki (read 2026-05-17) stated only **"OCULA-is-the-RAM" mode** is implemented — which *requires* the mux bridges. The `forum.defence-force.org` digest of OCULA thread `t=2709` (synthesised from 268 posts through 2026-05-13) frames OCULA-is-the-RAM as an *optional* mode for replacing the DRAM, implying a plain ULA-replacement mode exists that does **not** need the bridges. Firmware v0.1.4 (May 2026) may have changed which modes are implemented. **Re-verify against the current OCULA user manual before attempting the experiment.** This does not affect the §3 decision either way — OCULA stays a later experiment.
 
 ### Option 3B — OCULA (`sodiumlb/ocula-hardware` + `ocula-pivic-firmware`)
 
-A Raspberry-Pi-Pico-based **open-source** ULA replacement. Verified state:
+An **RP2350B**-microcontroller-based **open-source** ULA replacement (not RP2040 — OCULA needs the RP2350B's extra GPIO to emulate the 40-pin ULA; the A4 stepping is required to fix the E9 GPIO-leakage errata). Verified state:
 
 - **Both repos are BSD-3-Clause** — genuinely open: KiCAD PCB files, firmware source, user docs (`sodiumlb/ocula-docs`). The *only* ULA option that satisfies "understand every piece."
-- Hardware repo has a finished main PCB, a Micro-DVI adapter, and the mux-bridge boards. Native **DVI/HDMI out**, no converter.
-- **SMD board** — README says hand-assembly is not recommended beyond through-hole connectors; you'd order it **assembled (PCBA) from JLCPCB**.
+- Hardware repo has a finished main PCB, a Micro-DVI adapter (micro-HDMI connector), and the mux-bridge boards. Native **DVI/HDMI out**, no converter.
+- **SMD board** — README says hand-assembly is not recommended beyond through-hole connectors. Two ways to get one: order it **assembled (PCBA) from JLCPCB**, or — per OCULA thread `t=2709` — buy it finished from **raxiss.com** (iss), who began a commercial OCULA batch ~April 2026. Buying from raxiss gives a known-good assembled board, the same way you're buying LOCI; prefer that over self-ordering PCBA.
+- **Reset caveat:** OCULA takes ~49 ms from power-on to running, far longer than the Oric's stock ~2 ms reset RC. Fitting OCULA requires increasing `C21` from 1 µF to **100 µF** (up to 220 µF is confirmed safe) — a mod that also improves power-on reset reliability for any Oric.
 
 ### What the forum actually says (checked 2026-05-17, `forum.defence-force.org` OCULA thread `t=2709`, 18 pages)
 
@@ -115,6 +120,7 @@ You asked "how do I load software — LOCI?" Yes.
 - **Openness nuance (req #6):** the **LOCI firmware is BSD-3-Clause** (open), but the **LOCI *hardware* repo has no license declared** (technically all-rights-reserved). That sounds like a req-#6 violation — but it isn't really: you're going to **buy LOCI as a finished product**, not fabricate the PCB. You're not putting an un-open *design* into your machine; you're plugging in a purchased peripheral that runs open firmware. Different question. I'm flagging it so it's a conscious choice, not a surprise.
 - **Cheaper alternative:** Erebus (~£32, SD-card tape loader, plugs into the tape port). Fine as a quick-start, but LOCI is the better long-term answer and pairs with the rest of the ecosystem. Recommend going straight to LOCI.
 - **Diagnostic ROM:** burn Mike Brown's diagnostic ROM to an EPROM (or run via LOCI) for first power-on — it catches assembly faults before you start guessing.
+- **LOCI + Metaphoric — confirmed working** (forum digest, threads `t=2672` and the dedicated `t=2862`). Metaphoric's `ROMDIS`/UVPROM is auto-disabled when LOCI is fitted (confirmed by OldWer, `t=2733`) — no jumper to set. Two tuning notes from the forum if LOCI misbehaves on first use: the `RV1`/`tmap` timing trimmer defaults to ~10 (raise to ~12 if floppy emulation fails); a `!ROM` error means the flash needs re-bootstrapping with the Raxiss firmware. *(If you later run LOCI together with OCULA, `RV1` must instead be set to **5** — OCULA's MAP timing differs. Not relevant on the original ULA.)*
 
 ---
 
@@ -124,6 +130,7 @@ You asked "how do I load software — LOCI?" Yes.
 
 - **Primary (build day 1):** Metaphoric outputs **composite** on the RCA socket. Use a ~£10 composite→HDMI converter box into any HDMI monitor. Cheapest, works immediately.
 - **Better picture (optional):** build the RGB-SCART cable (`RGB_Scart_Tape.pdf` in the repo) into a GBS-Control/OSSC-class RGB→HDMI scaler — much sharper than composite. The RGB signal is the recommended way to use an Oric.
+  - **Watch the R/B swap:** the forum (`t=2669`) notes the ULA's red and blue colour outputs are swapped in *all* publicly available Oric schematics and ULA pinouts. If colours come out wrong on the SCART cable, use Mike Brown's corrected pinout — `oric.signal11.org.uk/html/ula-dieshot.htm`, Appendix A.
 - **Future, if the OCULA experiment succeeds:** **native DVI/HDMI** straight off the OCULA board (640×480 / 720p) via the Micro-DVI adapter, no converter at all.
 
 There is **no native USB-C** path. Plan on HDMI. (A USB-C monitor that accepts HDMI-alt-mode, or a cheap HDMI→USB-C adapter, covers a USB-C-only monitor.)
@@ -142,14 +149,14 @@ The **authoritative parts lists already exist in the repo** and we should order 
 | Category | Parts | Where | Notes |
 |---|---|---|---|
 | **The ULA** | HCS10017 ×2 | eBay — Nati 99 Electronics | ~£7.37 ea. Order first; supply is finite. Buy 2 — one + a spare (see §3). |
-| **NMOS core** | 6502A CPU, 6522A VIA, AY-3-8910 PSG | Mouser / Reichelt / UTSource | **6522: use a Rockwell 6522 — NOT the W65C22S** (breaks the cassette interface, per JennyDigital docs). AY-3-8910 is the cheap PSG both BOMs accept; beware fakes/pulls on the Chinese market — buy from a reputable seller. |
+| **NMOS core** | 6502A CPU, 6522A VIA, AY PSG | Mouser / Reichelt / UTSource | **CPU:** 2 MHz-rated **NMOS 6502A**. Avoid the WDC **W65C02** — it lacks the illegal opcodes some Oric software relies on (Rockwell R65C02 / Synertek SY65C02 are pin-compatible if you must go CMOS, but NMOS is the safe call). **VIA:** 2 MHz-rated **NMOS 6522A** (Rockwell, Synertek) — **NOT the W65C22S** (different signal levels, expansion-bus quirks, a known WDC hardware bug). Beware AliExpress "R6522AP": counterfeit CMOS remarks (paint fails the acetone test) that lack the PB3 internal pull-up the keyboard needs. **PSG:** see the rewritten §8 #4 — the forum changes this choice. Short version: order **KC89C72** or **YM2149F**, *not* a "genuine" new-stock AY-3-8910. |
 | **Memory** | 4464 DRAM etc. per BOM | Mouser / Reichelt | Per `MetaphoricV2/BOM.csv`. |
 | **ROM chip** | **27C512 EPROM** (decided) | Mouser / Reichelt | Gives switchable Oric-1/Atmos banks. Repo has prebuilt `DualROM27C512.bin`. Avoid 27C256 (needs a bodge wire, loses bank switching). Burns directly in the T48 you already own. |
 | **Glue logic + passives** | 74-series, resistors, caps, regulators, sockets, headers | Mouser / Reichelt | One consolidated order is much cheaper than three. Buy DIP **sockets** for every IC — sockets everywhere on a first build. |
 | **Keyboard** | 58× Cherry MX switches, keycaps, 2× DB9 connectors | Mouser / a keycap vendor | MX switches are a taste choice (tactile recommended for a typewriter feel). DB9 connectors solder to the **back** of the keyboard PCB. |
 | **Video** | AD724 + composite section parts | Mouser / Digi-Key | Per BOM's "COMPOSITE VIDEO SECTION". Skip the "AMPLIFIER SECTION" — internal speaker sound is poor. Plus a ~£10 composite→HDMI converter box. |
 | **PCBs** | MetaphoricV2 + MetaphoricKBV2 gerbers | JLCPCB | 5-board minimum each, ~£20–25 total. Use `MetaphoricV2/gerbers/` and `MetaphoricKBV2/gerbers/`. |
-| **OCULA** *(optional — the open experiment, §3)* | OCULA main PCB (PCBA) + 2× mux-bridge + Micro-DVI adapter + FFC cable | JLCPCB PCBA | SMD — order **assembled**. From `sodiumlb/ocula-hardware`. FFC cable spec: 20 cm, 20-pin, 0.5 mm pitch, reverse. Order this *after* the machine works on the real ULA, not in the first batch. |
+| **OCULA** *(optional — the open experiment, §3)* | OCULA main PCB + 2× mux-bridge + Micro-DVI adapter + FFC cable | **raxiss.com** (preferred) or JLCPCB PCBA | SMD — never hand-assemble. **Buy it finished from raxiss.com** (commercial OCULA batch started ~April 2026) — known-good, same as buying LOCI. Self-ordering PCBA from `sodiumlb/ocula-hardware` is the fallback. FFC cable spec: 20 cm, 20-pin, 0.5 mm pitch, reverse. Also budget a 100 µF cap for the `C21` reset mod (§3). Order this *after* the machine works on the real ULA, not in the first batch. |
 | **Peripheral** | LOCI | RaxIss / 8BitClub | ~$52. Separate purchase. |
 | **Power** | First power-on: your **DPS-150** bench supply set to 5.0 V with a current limit. Daily use: USB brick 5 V ≥3 A + 2.1 mm barrel jack, **centre-positive** | generic | Close J12+J13 on Metaphoric for external +5 V. Use the DPS-150 for the first smoke test — set a ~500 mA limit so a solder bridge trips the limiter instead of cooking a chip. Mark any barrel-jack cable so a centre-negative supply never goes in. |
 
@@ -195,7 +202,7 @@ The Chip Tester reads/rips ROMs but does **not burn** standard EPROMs. That gap 
 1. ~~**★ OCULA-in-Metaphoric compatibility (§3).**~~ **Investigated 2026-05-17** (forum thread `t=2709` read). Verdict: unverified, and the only clone attempt on record failed. **Decision: build 3A (original ULA) now; treat OCULA as a separate open experiment.** Still open — *optional* — post a direct question to OldWer/Sodiumlightbaby to learn whether OCULA is design-compatible with Metaphoric; I can draft it.
 2. ~~**EPROM programmer (§7).**~~ **Resolved 2026-05-17:** you already own an XGecu T48. No tool purchase needed. ROM chip → 27C512, burns directly in the T48.
 3. **6522 sourcing (§6).** Confirm a Rockwell-made 6522 is available from your chosen distributor — *not* the W65C22S.
-4. **AY-3-8910 authenticity (§6).** Decide a trusted seller; fakes are common.
+4. **AY sound chip choice (§6) — the forum reframes this.** The Oric keyboard matrix scans through the AY's I/O port; reading two keys on the same row depends on the AY's port output winning a drive fight. Genuine *old* GI **AY-3-8912** chips win it; new Microchip **AY-3-8910/8912** and many clones do **not** — Ctrl/Shift key combinations silently fail (forum `t=2669`, `t=2675`). Two consequences: (a) **Metaphoric V2 already ships the diode keyboard-fix** (reverse diodes on the AY column lines + a BS107 FET, with solder-jumper bypass), so a "weak" chip still works on this board; (b) the *best* chips to order are **KC89C72** (a currently-manufactured AY clone, ~5 EUR for 5 pcs, works even without the fix) or **YM2149F** (including Chinese repaints — also works without the fix). **Do not** hunt for a "genuine" new-stock AY-3-8910 — that is the part most likely to carry the keyboard bug. So this is no longer a "beware fakes" problem; it is a "pick KC89C72 or YM2149F" decision.
 5. **MX switch choice (§6).** Tactile / linear / clicky — your call; affects keycap order too.
 6. **Decide LOCI vs Erebus (§4).** Recommendation is LOCI; confirm the ~$52 spend is fine.
 7. **Read the actual repo BOM CSVs.** Before the order goes in, I expand §6 into a priced line-item list straight from `MetaphoricV2/BOM.csv` + `MetaphoricKBV2/BOM.csv`.
@@ -220,4 +227,5 @@ The Chip Tester reads/rips ROMs but does **not burn** standard EPROMs. That gap 
 - **2026-05-17.** Draft created. Board decided: **Metaphoric V2** (constraints #1–#7 settle it). Open question: original ULA vs OCULA — left for discussion, gated on a forum compatibility check. Nothing ordered.
 - **2026-05-17.** §3 resolved. Read the `forum.defence-force.org` OCULA thread (`t=2709`): OCULA only stabilised on *genuine* Orics ~Dec 2025–early 2026; the single clone attempt on record (Chema, an unknown homebrew clone) never booted; nobody has tried OCULA in a Metaphoric. **Decision: 3A — build with the original HCS10017 ULA; order OCULA hardware separately as an open experiment after the machine works.** Clarified that OCULA and the original ULA are *not* freely interchangeable (OCULA needs mux-bridge mods).
 - **2026-05-17.** Tools inventory (`build-journey/tools/`) reviewed. Strong bench QA/debug kit confirmed (Chip Tester Pro V2, DPS-150, DSO-TC3, DSLogic Plus, etc.). EPROM programmer confirmed: user already owns an **XGecu T48** (+ an A45U/DIP42 adapter not needed here). No tool purchases required. ROM chip → 27C512.
+- **2026-05-18.** Revisited against the `forum.defence-force.org` digest knowledge base. Changes folded in: **(§6/§8 #4)** AY chip recommendation reversed — order **KC89C72 or YM2149F**, not a genuine AY-3-8910, because new/genuine Microchip AY parts carry the keyboard-matrix drive bug while those clones do not (Metaphoric V2's diode fix covers it either way). **(§3)** OCULA corrected to **RP2350B**-based (not RP2040); flagged a source conflict over whether the mux-bridge interposers are mandatory; noted OCULA needs a `C21` 1 µF→100 µF reset mod; added **raxiss.com** as a commercial OCULA source (~April 2026) preferred over JLCPCB PCBA. **(§2)** Noted OldWer's €120 Metaphoric kit offer (`t=2733`) — worth asking about before self-sourcing. **(§5)** Added the ULA R/B pinout-swap warning for the SCART cable. **(§4)** Added LOCI `RV1` tuning notes and confirmed LOCI+Metaphoric works (ROMDIS auto-disabled). No change to the board or ULA decisions.
 - _(future entries: one line per concrete decision — "§3 resolved to 3A/3B", "ordered 2× HCS10017", "gerbers to JLCPCB", etc.)_

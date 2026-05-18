@@ -2,7 +2,7 @@
 type: journey-note
 title: "Metaphoric vs Oric Remix — deep comparison and decision check"
 created: 2026-05-17
-status: decision check — confirms §2 of 01-decision-bom-order
+status: decision check — confirms §2 of 10-decision-bom-order
 related_wiki:
   - "[[OldWer-Metaphoric]]"
   - "[[Board-Folk-Oric-Remix]]"
@@ -11,7 +11,7 @@ related_wiki:
 
 # Metaphoric vs Oric Remix — deep comparison and decision check
 
-> **Purpose:** before any money is spent, confirm that **Metaphoric** (chosen in `01-decision-bom-order.md` §2) is the right board — by deep-reading both GitHub repos and the Defence Force forum, and being honest about where Oric Remix actually wins.
+> **Purpose:** before any money is spent, confirm that **Metaphoric** (chosen in `10-decision-bom-order.md` §2) is the right board — by deep-reading both GitHub repos and the Defence Force forum, and being honest about where Oric Remix actually wins.
 >
 > **Verdict up front:** the decision holds. Metaphoric is the correct board *for your brief*. This doc shows the working, including the cases where Oric Remix would be the better answer — none of which match your stated constraints.
 
@@ -37,7 +37,7 @@ Both are remanufacturable PCBs that still need the original NMOS chipset — nei
 
 ---
 
-## 2. Scored against your seven constraints (`01 §0`)
+## 2. Scored against your seven constraints (`10 §0`)
 
 This is the part that matters — not a generic feature list, but how each board does against *your* brief.
 
@@ -92,7 +92,7 @@ Metaphoric is not universally better — it is better *for your brief*. Oric Rem
 3. **You weight "most recently maintained" over "stable and proven"** — Remix is the live project; Metaphoric is the settled one.
 4. **You want to revive/repair a real donor Oric** rather than build a standalone machine — that is literally Oric Remix's purpose.
 
-None of these match the brief in `01 §0`: you want a standalone working machine, no case, a keyboard included now, built once. **So the decision stands — build Metaphoric.**
+None of these match the brief in `10 §0`: you want a standalone working machine, no case, a keyboard included now, built once. **So the decision stands — build Metaphoric.**
 
 ---
 
@@ -104,8 +104,10 @@ Going with Metaphoric is the right call, and now a checked one:
 - Oric Remix's real advantages (active maintenance, a visible bug-fix cycle, case-compatibility) are either irrelevant to you or outweighed by Metaphoric having a keyboard, joysticks, CC0 licensing, and a real support community **today**.
 - The one legitimate concern — Metaphoric being 13 months stale — is resolved: forum evidence (`t=2672`) confirms a Metaphoric clone runs LOCI identically to a real Atmos, so it is finished, not abandoned.
 
-No change to `01-decision-bom-order.md`. Proceed with the Metaphoric BOM.
+No change to `10-decision-bom-order.md`. Proceed with the Metaphoric BOM.
 
 ## 7. Decision log
 
-- **2026-05-17.** Deep Metaphoric-vs-Oric-Remix comparison performed (both GitHub repos + Defence Force forum read while logged in). Outcome: **Metaphoric confirmed.** Decision in `01 §2` unchanged.
+- **2026-05-17.** Deep Metaphoric-vs-Oric-Remix comparison performed (both GitHub repos + Defence Force forum read while logged in). Outcome: **Metaphoric confirmed.** Decision in `10 §2` unchanged.
+
+- **2026-05-18.** Re-checked against the `forum.defence-force.org` digest knowledge base (structured digests of the Hardware Hacks / Technical Questions / AY sub-forums). Findings reinforce Metaphoric: thread `t=2733` confirms OldWer's design auto-disables ROMDIS/UVPROM when LOCI is fitted — the exact path the Oric Remix v1.1 `/ROMDIS` bug broke — and a dedicated `t=2862` "Loci + Metaphoric" thread exists. No change to the decision.
