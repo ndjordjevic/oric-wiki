@@ -184,6 +184,8 @@ See [[JennyDigital-OriClone-1]] for the full picture. It's the historical artifa
 
 ## 6. The OCULA escape valve
 
+> **Superseded — see [[09-ocula]].** This section was the May-2026 first-pass research and is now stale on the details: OCULA is **RP2350B**-based (not a plain Pico/RP2040), firmware reached **v0.1.4** (May 2026), the hardware/firmware repos went public March 2026, and **raxiss.com began selling finished OCULA boards ~April 2026** — it *is* buyable. The current reference is [[09-ocula]]; the build decision is in `10-decision-bom-order.md` §3. The paragraphs below are kept as the historical record only.
+
 `sodiumlb/ocula-pivic-firmware` is a **Raspberry-Pi-Pico-based replacement** for the HCS10017 ULA, in active development by Sodiumlightbaby (the same author as LOCI — see [[sodiumlb-loci-firmware]] and [[raxiss.com]]). Latest firmware: **v0.1.3, March 2026**. It is not yet a buyable hardware product — what exists is firmware + PCB-design forum threads where the author shares routing and pinout iterations.
 
 Reading the active forum thread (`forum.defence-force.org/viewtopic.php?t=2709`, page 2 captured) confirms:
@@ -317,6 +319,8 @@ Run `/pin-llm-wiki run` against the inbox to ingest them as wiki source pages, t
 ---
 
 ## 13. Forum research findings (`forum.defence-force.org`)
+
+> **Thread IDs below are inaccurate** — corrected during a later forum investigation. Verified IDs: Metaphoric announcement `t=2675`, Metaphoric V2 `t=2733`, LOCI first impressions `t=2672`, Loci + Metaphoric `t=2862`, Oric Remix `t=2746`, OCULA `t=2709`. See `05-metaphoric-vs-oric-remix.md` §4. The counts and community analysis in this section still stand.
 
 Authenticated searches across `forum.defence-force.org` (May 2026) returned the following counts:
 
